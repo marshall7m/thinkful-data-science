@@ -5,7 +5,10 @@
 --
 SELECT * FROM weather;
 
+<<<<<<< HEAD
+=======
 -- need help
+>>>>>>> a4a2f514bdaa2f51d73dcec6c9695b363d4c2d74
 SELECT 
 	zip,
 	date,
@@ -13,7 +16,13 @@ SELECT
 FROM 
 	weather
 GROUP BY 
+<<<<<<< HEAD
+	zip, date
+ORDER BY 
+	MAX(maxtemperaturef) DESC;
+=======
 	zip, date;
+>>>>>>> a4a2f514bdaa2f51d73dcec6c9695b363d4c2d74
 	
 --	
 SELECT 
@@ -25,11 +34,19 @@ GROUP BY
 	
 -- need help
 SELECT
+<<<<<<< HEAD
+	trip_id, MIN(duration)
+FROM 
+	trips
+GROUP BY
+	trip_id, duration
+=======
 	trip_id, duration
 from 
 	trips
 WHERE 
 	duration = 60
+>>>>>>> a4a2f514bdaa2f51d73dcec6c9695b363d4c2d74
 ORDER BY 
 	duration ASC;
 	
