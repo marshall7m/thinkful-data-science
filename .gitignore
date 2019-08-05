@@ -3,6 +3,7 @@ SQL/data
 experiment_design_AB_test/data
 data_viz_and_explor/data
 linear_regression/data
+random_forrest/data
 
 **/.DS_Store
 ./elevator_pitch_ds.mov
