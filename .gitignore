@@ -5,6 +5,7 @@ data_viz_and_explor/data
 linear_regression/data
 random_forrest/data
 SVM/data
+capstone_3_supervised_learning/data
 
 **/.DS_Store
 ./elevator_pitch_ds.mov
