@@ -6,6 +6,7 @@ linear_regression/data
 random_forrest/data
 SVM/data
 capstone_3_supervised_learning/data
+neural_networks/data
 
 **/.DS_Store
 ./elevator_pitch_ds.mov
