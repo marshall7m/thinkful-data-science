@@ -1,17 +1,22 @@
 -- 1
 
-SELECT * 
-FROM naep
+SELECT 
+	* 
+FROM
+	naep
 ;
 
 -- 2
 
-SELECT * 
-FROM naep 
-LIMIT 50
+SELECT 
+	* 
+FROM 
+	naep 
+LIMIT 
+	50
 ;
 
--- 3 why avg is wrong?
+-- 3
 
 SELECT 
 	state, 
@@ -19,9 +24,12 @@ SELECT
 	AVG(avg_math_4_score), 
 	MIN(avg_math_4_score), 
 	MAX(avg_math_4_score) 
-FROM naep 
-GROUP BY state 
-ORDER BY state ASC
+FROM 
+	naep 
+GROUP BY 
+	state 
+ORDER BY 
+	state ASC
 ;
 
 -- 4
@@ -66,10 +74,10 @@ GROUP BY
 	state
 ;
 
--- 7 ?
+-- 7 
 
 SELECT
-	state AS below_average_states_y2000, avg_math_4_score
+	state AS below_average_states_y2000
 FROM 
 	naep
 WHERE
@@ -79,7 +87,7 @@ AND
 GROUP BY 
 	state, avg_math_4_score
 HAVING 
-	AVG(avg_math_4_score) > avg_math_4_score
+	AVG(avg_math_4_score) > (SELECT AVG(avg_math_4_score) FROM naep WHERE year=2000)
 ;
 
 -- 8
@@ -113,6 +121,7 @@ AND
 ORDER BY
 	finance.total_expenditure DESC
 ;
+
 
 
 
