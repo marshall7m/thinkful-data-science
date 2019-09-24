@@ -40,10 +40,14 @@ SELECT
 	AVG(avg_math_4_score), 
 	MIN(avg_math_4_score), 
 	MAX(avg_math_4_score) 
-FROM naep 
-GROUP BY state 
-HAVING MAX(avg_math_4_score) - MIN(avg_math_4_score) > 30
-ORDER BY state ASC
+FROM 
+	naep 
+GROUP BY 
+	state 
+HAVING 
+	MAX(avg_math_4_score) - MIN(avg_math_4_score) > 30
+ORDER BY 
+	state ASC
 ;
 
 -- 5 
@@ -83,7 +87,7 @@ FROM
 WHERE
 	year=2000
 AND
-	avg_math_4_score IS NOT NULL
+	avg_math_4_score IS NOT null
 GROUP BY 
 	state, avg_math_4_score
 HAVING 
