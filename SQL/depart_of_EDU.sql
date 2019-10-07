@@ -1,9 +1,11 @@
 -- 1
 
-SELECT 
-	* 
+SELECT
+   *
 FROM
-	naep
+   information_schema.COLUMNS
+WHERE
+   TABLE_NAME = 'naep'
 ;
 
 -- 2
