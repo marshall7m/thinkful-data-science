@@ -8,6 +8,8 @@ SVM/data
 capstone_3_supervised_learning/data
 neural_networks/data
 capstone_4_unsupervised_learning/data
+capstone_final/data
 
+**/.scrapy
 **/.DS_Store
 ./elevator_pitch_ds.mov
