@@ -5,10 +5,10 @@ data_viz_and_explor/data
 linear_regression/data
 random_forrest/data
 SVM/data
-capstone_3_supervised_learning/data
 neural_networks/data
-capstone_4_unsupervised_learning/data
-capstone_final/data
+capstone_1_supervised_learning/data
+capstone_2_unsupervised_learning/data
+capstone_3_final/data
 
 **/.scrapy
 **/.DS_Store
